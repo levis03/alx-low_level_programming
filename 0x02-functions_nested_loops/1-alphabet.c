@@ -3,8 +3,17 @@
 /**
  * print alphabet in lowercase followed by a new line
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return(0);
+		char ch;
+
+			ch = 'a';
+
+				while (ch <= 'z')
+						{
+									_putchar(ch);
+											ch++;
+												}
+
+					_putchar('\n');
 }
