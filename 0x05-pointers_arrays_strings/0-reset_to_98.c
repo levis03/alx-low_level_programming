@@ -1,7 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 
-/** reset_to_98 - updates the value of n to 98
+/** 
+ * reset_to_98 - updates the value of n to 98
+ * Description: 'My own description'
  * @n: integer pointer to a variable to be updated
  *
  * Return: nothing
