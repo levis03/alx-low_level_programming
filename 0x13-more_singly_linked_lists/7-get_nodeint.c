@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * get_nodeint_at_index - Locates a given node of
@@ -12,15 +13,15 @@
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	unsigned int node;
+	unsigned int y = 0;
 
-	for (node = 0; node < index; node++)
+	if (head == NULL)
+		return (NULL);
+	for (y = 0; y < index; y++)
 	{
-		if (head == NULL)
-			retrurn (NULL);
-
 		head = head->next;
+		if (head == NULL)
+			return (NULL);
 	}
-
 	return (head);
 }
